@@ -388,6 +388,16 @@ img {
   }
 }
 
+@media screen and (min-width: 1158px) {
+  .feature-title {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.4px;
+  }
+}
+
 .feature-list {
   display: flex;
   flex-direction: column;
@@ -505,6 +515,7 @@ img {
 .team-list {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 72px;
   align-items: center;
 }
@@ -514,7 +525,6 @@ img {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 72px 24px;
-    padding-left: 92px;
   }
 }
 
@@ -574,8 +584,8 @@ img {
 .social-icon-list {
   display: flex;
   gap: 24px;
-  justify-content: center;
   margin-top: 8px;
+  justify-content: center;
 }
 
 .icon-link {
@@ -583,7 +593,6 @@ img {
   background-color: var(--accent-color);
   border-radius: 50%;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
@@ -627,13 +636,13 @@ img {
 .customer-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 72px 16px;
 }
 
 @media screen and (min-width: 768px) {
   .customer-list {
     gap: 72px 24px;
-    padding: 0 108px;
   }
 }
 
@@ -1111,6 +1120,14 @@ img {
   padding: 72px 24px 24px 24px;
 }
 
+@media screen and (max-width: 458px) {
+  .modal {
+    max-width: 392px;
+    width: 100%;
+    padding: 72px 16px 24px 16px;
+  }
+}
+
 .closing-button {
   width: 24px;
   height: 24px;
@@ -1450,11 +1467,20 @@ img {
   letter-spacing: 0.4px;
 }
 
-.mobile-icon-list {
-  display: flex;
-  justify-content: flex-start;
-  gap: 56px;
+@media screen and (max-width: 427px) {
+  .mobile-icon-list {
+    display: flex;
+    justify-content: space-between;
+  }
 }
+
+@media screen and (min-width: 428px) {
+  .mobile-icon-list {
+    display: flex;
+    gap: 56px;
+  }
+}
+
 .mobile-cust-link {
   padding: 8px;
   background-color: var(--accent-color);
